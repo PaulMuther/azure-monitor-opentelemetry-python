@@ -1,10 +1,12 @@
 
-lask==2.3.3
+# --- Web app dependencies (pinned to avoid pip resolver backtracking) ---
+Flask==2.3.3
 Flask-SQLAlchemy==3.0.5
 Flask-WTF==1.1.1
+
+# --- WSGI server for Azure App Service ---
 gunicorn==21.2.0
 
-azure-monitor-opentelemetry
-
-
-
+# --- Azure Monitor OpenTelemetry "Distro" (recommended one-line setup) ---
+# Bundles Azure Monitor exporters + supported OTel instrumentations (incl. Flask/Requests) [2](https://pypi.org/project/azure-monitor-opentelemetry/)[3](https://learn.microsoft.com/en-us/python/api/overview/azure/monitor-opentelemetry-readme?view=azure-python)
+azure-monitor-opentelemetry==1.8.4
