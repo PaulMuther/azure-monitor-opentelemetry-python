@@ -1,0 +1,4 @@
+
+# Root requirements file for CI/Oryx.
+# Delegate dependency installation to the Flask sample requirements.
+-r azure_monitor/flask_sample/requirements.txt
