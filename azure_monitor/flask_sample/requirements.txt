@@ -7,6 +7,8 @@ Flask-WTF==1.1.1
 # --- WSGI server for Azure App Service ---
 gunicorn==21.2.0
 
-# --- Azure Monitor OpenTelemetry "Distro" (recommended one-line setup) ---
-# Bundles Azure Monitor exporters + supported OTel instrumentations (incl. Flask/Requests) [2](https://pypi.org/project/azure-monitor-opentelemetry/)[3](https://learn.microsoft.com/en-us/python/api/overview/azure/monitor-opentelemetry-readme?view=azure-python)
+# --- Azure Monitor OpenTelemetry Distro (bundles exporters + supported instrumentations like Flask/Requests) ---
 azure-monitor-opentelemetry==1.8.4
+
+# --- Extra instrumentation required by this sample's code (NOT bundled by the distro) ---
+opentelemetry-instrumentation-sqlalchemy==0.60b0
