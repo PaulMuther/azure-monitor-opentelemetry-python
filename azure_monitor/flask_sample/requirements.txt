@@ -1,14 +1,15 @@
 
-# --- Web app dependencies (pinned to avoid pip resolver backtracking) ---
+# --- Web app dependencies (pinned to avoid resolver backtracking + runtime incompatibilities) ---
 Flask==2.3.3
+Werkzeug==2.3.8
 Flask-SQLAlchemy==3.0.5
-Flask-WTF==1.1.1
+Flask-WTF==1.2.1
 
 # --- WSGI server for Azure App Service ---
 gunicorn==21.2.0
 
-# --- Azure Monitor OpenTelemetry Distro (bundles exporters + supported instrumentations like Flask/Requests) ---
+# --- Azure Monitor OpenTelemetry Distro ---
 azure-monitor-opentelemetry==1.8.4
 
-# --- Extra instrumentation required by this sample's code (NOT bundled by the distro) ---
+# --- Extra instrumentation required by this sample's code ---
 opentelemetry-instrumentation-sqlalchemy==0.60b0
