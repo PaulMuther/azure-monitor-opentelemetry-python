@@ -1,15 +1,10 @@
-f
-# Web framework stack (pinned to avoid pip backtracking)
-Flask==2.3.3
+
+lask==2.3.3
 Flask-SQLAlchemy==3.0.5
 Flask-WTF==1.1.1
-
-# Host
 gunicorn==21.2.0
 
-# Azure Monitor OpenTelemetry exporter (beta exists; GA 1.0.0 does not)
-azure-monitor-opentelemetry-exporter==1.0.0b46
+azure-monitor-opentelemetry
 
-opentelemetry-instrumentation-flask == 0.24b0
-opentelemetry-instrumentation-requests == 0.24b0
-opentelemetry-instrumentation-sqlalchemy == 0.24b0
+
+
