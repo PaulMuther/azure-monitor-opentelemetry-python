@@ -48,4 +48,5 @@ trace.get_tracer_provider().add_span_processor(
 # Import here to avoid circular imports
 from app import routes  # noqa isort:skip
 
-app.run(host='localhost', port=5000)
+if __name__ == '__main__':
+    endpoint_app.run(host='localhost', port=5001, threaded=True, debug=True)
