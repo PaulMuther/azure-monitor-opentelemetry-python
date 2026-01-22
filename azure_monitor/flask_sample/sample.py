@@ -1,3 +1,4 @@
 from app import app
 
-app.run(host='localhost', port=5000, threaded=True, debug=True)
+if __name__ == '__main__':
+    endpoint_app.run(host='localhost', port=5001, threaded=True, debug=True)
